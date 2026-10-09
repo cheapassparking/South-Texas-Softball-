@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import StoryCard from "@/components/StoryCard";
 import StatPill from "@/components/StatPill";
 import FeatureQuote from "@/components/FeatureQuote";
-import MediaCard from "@/components/MediaCard";
+import SocialMediaGrid from "@/components/SocialMediaGrid";
 
 export const metadata: Metadata = {
   title: "South Texas Softball | Emerson's Journey",
@@ -246,12 +246,7 @@ export default function HomePage() {
             Follow Emerson&apos;s softball journey across social media — drills, tournament vlogs,
             highlights, and real behind-the-scenes content.
           </p>
-          <div className="media-grid">
-            <MediaCard variant="tiktok" icon="🎵" name="TikTok" handle="@southtexassoftball" href="#" />
-            <MediaCard variant="fb" icon="📘" name="Facebook" handle="South Texas Softball" href="#" />
-            <MediaCard variant="ig" icon="📸" name="Instagram" handle="@southtexassoftball" href="#" />
-            <MediaCard variant="yt" icon="▶️" name="YouTube" handle="South Texas Softball" href="#" />
-          </div>
+          <SocialMediaGrid />
         </div>
       </section>
     </>
