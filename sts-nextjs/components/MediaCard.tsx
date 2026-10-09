@@ -20,6 +20,19 @@ export default function MediaCard({ variant, icon, name, handle, href }: MediaCa
   );
 
   if (href) {
+    const external = href.startsWith("http://") || href.startsWith("https://");
+    if (external) {
+      return (
+        <a
+          href={href}
+          className={`media-card ${variantClass}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {content}
+        </a>
+      );
+    }
     return (
       <Link href={href} className={`media-card ${variantClass}`}>
         {content}
