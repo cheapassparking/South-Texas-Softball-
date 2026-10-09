@@ -129,7 +129,7 @@ export default function Hero({ children, leftPhoto, rightPhoto }: HeroProps) {
       if (seamsRef.current) {
         seamsRef.current.style.transform = `translate(${cx * 0.4}px, ${
           cy * 0.4
-        }px)`;
+        }px) scale(1.08)`;
       }
       parallaxRafId = requestAnimationFrame(raf);
     }
@@ -150,6 +150,7 @@ export default function Hero({ children, leftPhoto, rightPhoto }: HeroProps) {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 600"
           preserveAspectRatio="xMidYMid slice"
+          overflow="hidden"
         >
           <defs>
             <radialGradient id="fmask" cx="50%" cy="50%" r="55%">
