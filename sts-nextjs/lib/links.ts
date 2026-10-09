@@ -60,7 +60,11 @@ export type DonationMethod = {
 };
 
 export const donationMethods: DonationMethod[] = [
-  { id: "venmo", label: "Venmo", url: "" },
+  {
+    id: "venmo",
+    label: "Venmo",
+    url: "https://venmo.com/code?user_id=4565378873164956255&created=1791576782.075017&printed=1",
+  },
   { id: "cashapp", label: "Cash App", url: "" },
   { id: "paypal", label: "PayPal", url: "" },
   { id: "gofundme", label: "GoFundMe", url: "" },
